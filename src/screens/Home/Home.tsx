@@ -8,7 +8,13 @@ import { Container, MainImage, Box, Button, Frase } from './style';
 import { useFonts, Montserrat_800ExtraBold, Montserrat_400Regular, Montserrat_600SemiBold} from "@expo-google-fonts/montserrat";
 import AppLoading from 'expo-app-loading';
 
+import { useNavigation } from '@react-navigation/native';
+
+import { propsStack } from '../../Models';
+
 const Home: React.FC = () => {
+  
+  const navigation = useNavigation<propsStack>()
 
   const [ fontsLoaded ] = useFonts({
     Montserrat_800ExtraBold, 
@@ -37,7 +43,7 @@ const Home: React.FC = () => {
       <Frase>Viaje com segurança</Frase>
       </Box>
 
-      <Button onPress={Login}>
+      <Button onPress={() => navigation.navigate("Login")}>
 
             <Text style={{fontFamily: 'Montserrat_600SemiBold', fontSize: 18}}>Começar</Text>
             <Ionicons name="arrow-forward" size={27} color="white"/>

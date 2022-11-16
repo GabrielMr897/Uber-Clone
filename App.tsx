@@ -4,18 +4,19 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './src/screens/Home/Home';
 import Map from './src/screens/Map/Map';
+import Login from './src/screens/Login/Login';
+import { propsNavigationStack } from './src/Models';
 
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<propsNavigationStack>();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{
-          headerShown: false
-        }} />
+      <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Map" component={Map} />
+        <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
   );
