@@ -18,6 +18,7 @@ export const Button = styled.TouchableOpacity`
     flex-direction: row;
     padding: 10px;
     justify-content: center;
+    
 
 
 `
@@ -36,6 +37,8 @@ export const Frase = styled.Text`
     font-family: 'Montserrat_800ExtraBold';
     font-size: 32px;
     width: 100%;
+    color: white;
+    
 `
 export const MainImage = styled.Image`
     width: 180px; 

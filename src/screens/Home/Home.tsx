@@ -45,7 +45,7 @@ const Home: React.FC = () => {
 
       <Button onPress={() => navigation.navigate("Login")}>
 
-            <Text style={{fontFamily: 'Montserrat_600SemiBold', fontSize: 18}}>Começar</Text>
+            <Text style={{fontFamily: 'Montserrat_600SemiBold', fontSize: 18,  color: 'white'}}>Começar</Text>
             <Ionicons name="arrow-forward" size={27} color="white"/>
            
           
