@@ -17,8 +17,7 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     flex-direction: row;
     padding: 10px;
-    padding-left: 140px;
-    justify-content: space-between;
+    justify-content: center;
 
 
 `
@@ -34,7 +33,9 @@ export const Box = styled.View`
 
 
 export const Frase = styled.Text`
-
+    font-family: 'Montserrat_800ExtraBold';
+    font-size: 32px;
+    width: 100%;
 `
 export const MainImage = styled.Image`
     width: 180px; 
