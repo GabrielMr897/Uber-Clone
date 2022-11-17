@@ -22,10 +22,7 @@ const Login: React.FC = () => {
 
   return (
   <Container>
-    <Title>Digite seu número de telefone</Title>
-
-
-
+    <Title>Digite seu número de celular</Title>
     <StatusBar style='auto'/>    
     </Container>
     );
