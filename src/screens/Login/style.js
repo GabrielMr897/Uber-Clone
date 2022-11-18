@@ -21,19 +21,18 @@ export const Title = styled.Text`
 
 `
 
-export const BoxNumber = styled.View `
+export const BoxLogin = styled.View `
     width: 100%;
 
 `
 
 export const BoxInput = styled.View`
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 `
 
@@ -41,6 +40,7 @@ export const BoxInput = styled.View`
 export const Country = styled.View `
     background-color:#dddd;
     width: 25%;
+    justify-content: center;
     height: 100%;
     border-radius: 15px;
     padding: 10px;
@@ -52,4 +52,27 @@ export const Number = styled.TextInput`
     height: 100%;
     width: 70%;
     border-radius: 15px;
+`
+
+
+export const ButtonNumber = styled.TouchableOpacity`
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+`
+
+
+export const BoxOr = styled.View`
+
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
 `
