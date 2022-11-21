@@ -19,7 +19,6 @@ const Home: React.FC = () => {
   const [ fontsLoaded ] = useFonts({
     Montserrat_800ExtraBold, 
     Montserrat_400Regular,
-    Montserrat_600SemiBold
   })
 
 
@@ -46,7 +45,6 @@ const Home: React.FC = () => {
       <Button onPress={() => navigation.navigate("Login")}>
 
             <Text style={{
-              fontFamily: 'Montserrat_600SemiBold', 
               fontSize: 18,  
               color: 'white',
               textAlign: 'center',

@@ -18,11 +18,12 @@ export default function App() {
         }}>
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen 
-        name="Map" 
-        component={Map} />
-        <Stack.Screen 
         name="Login" 
         component={Login} 
+        options={{cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS}}/>
+        <Stack.Screen 
+        name="Map" 
+        component={Map} 
         options={{cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS}}/>
       </Stack.Navigator>
     </NavigationContainer>

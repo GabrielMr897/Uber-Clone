@@ -6,14 +6,18 @@ import { useFonts, Montserrat_800ExtraBold, Montserrat_400Regular, Montserrat_60
 import Ionicons from '@expo/vector-icons/Ionicons';
 import AppLoading from 'expo-app-loading';
 import { Link } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+
+import { propsStack } from '../../Models';
 
 
 const Login: React.FC = () => {
+  const navigation = useNavigation<propsStack>()
 
   const [ fontsLoaded ] = useFonts({
     Montserrat_800ExtraBold, 
     Montserrat_400Regular,
-    Montserrat_600SemiBold
+    
   })
 
 
@@ -36,8 +40,8 @@ const Login: React.FC = () => {
       </Number>
     </BoxInput>
 
-    <ButtonNumber>
-      <Text style={{color: 'white', fontFamily: 'Montserrat_600SemiBold'}}>Continuar</Text>
+    <ButtonNumber onPress={() => navigation.navigate("Map")}>
+      <Text style={{color: 'white', }}>Continuar</Text>
     </ButtonNumber>
 
     <BoxOr>
