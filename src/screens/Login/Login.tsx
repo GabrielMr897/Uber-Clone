@@ -53,7 +53,8 @@ const Login: React.FC = () => {
       <View style={{ height:4, backgroundColor: '#DADDDA'}}></View>
     </BoxOr>
 
-    <TouchableOpacity style={{backgroundColor: '#dddd', padding: 20, alignItems: 'center', justifyContent: 'center', borderRadius: 15}}>
+    <TouchableOpacity style={{backgroundColor: '#dddd', padding: 20, alignItems: 'center', justifyContent: 'center', borderRadius: 15, flexDirection: 'row'}}>
+      <Image style={{width: 30, height: 30, marginRight: 5}} source={require("../../../assets/logoGoogle.png")}></Image>
       <Text style={{fontFamily: 'Montserrat_800ExtraBold'}}>Continuar com Google</Text>
     </TouchableOpacity>
 
